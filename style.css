@@ -1,0 +1,63 @@
+*{
+    justify-content: center;
+    text-align: center;
+}
+
+body{
+    background-image: url('./img/logo-CodeCraft-fondo.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real a tu imagen */
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center center;
+    margin: 0; /* Eliminar el margen predeterminado */
+    height: 100vh; /* Ocupar toda la altura de la ventana */
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #8896CF;
+    padding: 40px;
+}
+
+.logo-header{
+    width: 200px;
+    weight: auto;
+}
+
+.btn-header{
+    border: 1px solid black;
+    background-color: aliceblue;
+    padding: 2px 60px;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.contenedor {
+    margin: 20px;
+    max-width: 550px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+        "header header"
+        "contenido contenido"
+        "footer footer";
+} 
+
+.contenido {
+    border: black solid 2px;
+    border-radius: 8px;
+    max-width: 200px;
+    padding-top: 15px;
+    padding-bottom: 8px;
+    background-color: #8896CF;
+}
+
+.descripcion {
+    font-family: kodchasan;
+
+
+}
+
