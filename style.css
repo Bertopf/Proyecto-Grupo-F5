@@ -61,3 +61,54 @@ header{
 
 }
 
+.proyecto-contenido{
+  position: relative;
+  width: 100%; /* o un tamaño fijo como 400px */
+}
+
+.proyecto-contenido img {
+    border: 4px solid black;
+}
+
+.proyecto-contenido h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  color: white;
+  font-size: 16px;
+
+}
+
+.proyectos {
+    margin: 20px;
+    max-width: 550px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+        "header header header"
+        "proyecto-contenido proyecto-contenido proyecto-contenido"
+        "proyecto-contenido proyecto-contenido proyecto-contenido"
+        "footer footer footer";
+} 
+
+.proyecto-contenido img{
+    width: 220px;
+    height: auto;
+}
+
+  
+.proyecto-contenido h4 {
+    transition: all 0.3s ease;
+  }
+
+.proyecto-contenido:hover h4 {
+    transform: translate(-50%, -55%);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+
