@@ -5,12 +5,12 @@
 
 body{
     background-image: url('./img/logo-CodeCraft-fondo.png'); /* Reemplaza 'ruta/a/tu/imagen.jpg' con la ruta real a tu imagen */
-    background-size: cover;
+    background-size: 150%;
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: center center;
+    background-position: center;
     margin: 0; /* Eliminar el margen predeterminado */
-    height: 100vh; /* Ocupar toda la altura de la ventana */
 }
+
 header{
     display: flex;
     justify-content: space-between;
