@@ -268,10 +268,83 @@
   box-sizing: border-box;
 }
 
+/*boton modo noche*/
 .flip-back {
   transform: rotateY(180deg);
 }
 
+body.modo-noche {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.modo-noche header {
+  background-color: #2c2f4a;
+}
+
+body.modo-noche .miembro,
+body.modo-noche .flip-card-front,
+body.modo-noche .flip-card-back {
+  background-color: #2c2f4a;
+  color: #f0f0f0;
+}
+
+body.modo-noche .boton2,
+body.modo-noche #modo-toggle {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #f0f0f0;
+}
+
+#modo-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #8896CF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contenido-principal {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+  text-align: center;
+  box-sizing: border-box;
+
+  /* Tamaño de texto responsive */
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.8;
+}
+
+.equipo {
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
 
   
 @media screen and (max-width: 768px) {
@@ -281,5 +354,29 @@
 
   .button-toggle {
     display: block;
+  }
+}
+
+/*@media para boton noche*/
+@media screen and (max-width: 768px) {
+  #modo-toggle {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #modo-toggle {
+    right: auto;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contenido-principal {
+    font-size: 1.3rem;
   }
 }
