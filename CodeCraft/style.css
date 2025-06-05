@@ -1,0 +1,659 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      background-color: #8896CF ;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      justify-content: space-between;
+    }
+
+    .boton-logo {
+      display: contents;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-icono {
+      width: 110px;
+      height: 40px;
+      border-radius: 0%;
+      object-fit: cover;
+    }
+
+    .boton2 {
+      padding: 10px 20px;
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      border: 3px solid #020202;
+      border-radius: 12px;
+
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px auto 10px;
+      padding: 0 20px;
+      max-width: 900px;
+      font-family: Konkhmer Sleokchher;
+      font-size: 40px;
+    }
+
+    .equipo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .equipo a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .miembro {
+      background-color: #8896CF;
+      border: 3px solid #020202;
+      padding: 16px;
+      border-radius: 12px;
+      width: 220px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .miembro .foto {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .redes {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .redes img {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 30px auto 10px;
+      padding: 0 20px;
+      max-width: 500px;
+      font-family: Kodchasan;
+      font-size: 14px;
+
+    }
+
+   body {
+    background-image:url(./Imagenes/logo\ codecraft\ trasparente.png);
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;         
+    align-items: center;
+    alignment-baseline: center;
+    }
+
+    h4 {
+      text-align: center;
+      margin: 40px auto 10px;
+      padding: 0 20px;
+      max-width: 500px;
+      font-family: Kodchasan Impact, Haettenschweiler,;
+      font-size: 14px;
+    }
+
+    .botondiseño {
+       cursor: pointer;
+       padding: 0%;
+       justify-content: center;
+       
+    }
+
+    .imagen {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center; 
+       padding: 80px 80px;
+       gap: 20px
+    }
+
+    h6 {
+        text-align: center;
+      margin: 50px auto 60px;
+      padding: 0 14px;
+      max-width: 900px;
+      font-family: Kodchasan Impact,;
+      font-size: 35px;
+    }
+
+    p {
+      text-align: center;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    .individual {
+      display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       margin-top: 40px;
+    }
+
+    .logosind {
+      display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       margin-top: 40px;
+       grid-template-columns: auto;
+    }
+
+    .blanconegrofotos {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+       margin-top: 40px;
+       margin-bottom: 40px;
+    }
+
+    .logosind img {
+      width: 30px;
+    }
+
+    .button-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+}
+
+ .button-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+      }
+    .submenu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      color: white;
+      }
+      .menu2 {
+        display: none;
+      }
+      .menu2 a {
+        text-decoration: none;
+        color: inherit;
+      }
+@media screen and (max-width: 768px) {
+  .boton-logo {
+   margin: 20px;
+  }
+  .button-toggle {
+    display: block;
+  }
+  .submenu-toggle {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #344277;
+    position: absolute;
+    top: 80px;
+    left: 50;
+    width: 100%;
+    max-width: 45%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 0px 0px 10px;
+    right: 0;
+    z-index: 9999;
+  }
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+  /* Cuando el menú está abierto */
+  .menu.open {
+    display: flex;
+  }
+    .menu2 {
+    display: none;
+    flex-direction: column;
+    background: #172146;
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 10px 0px 0px 10px;
+    right: 0;
+    left: 0;
+  }
+  .menu2 a {
+    display: block;
+    border-bottom: #0F1631 solid;
+  }
+  /* Cuando el menú está abierto */
+  .menu2.open {
+    display: flex;
+  }
+}
+
+
+/* Efecto flip para Miguel */
+/*.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.flip-card {
+  width: 300px;
+  perspective: 1000px;
+  margin-bottom: 40px;
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease-in-out;
+  transform-style: preserve-3d;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+
+.flip-card.flipped .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/*.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  background-color: #8896CF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+
+/*.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #8896CF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 2;  
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #8896CF;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+/*.flipped {
+  transform: rotateY(180deg);
+}
+
+.flip-front, .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: none;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}*/
+
+.flip-card {
+  width: 300px;
+  height: 300px; /* 👈 Ajustamos altura para cuadrado */
+  perspective: 1000px;
+  margin-bottom: 40px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* 👈 exactamente igual */
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+/* Frente de la tarjeta */
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 👈 llena el espacio cuadrado sin deformarse */
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* Reverso con texto */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #8896CF;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card-back h5 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+
+/*boton modo noche*/
+.flip-back {
+  transform: rotateY(180deg);
+}
+
+body.modo-noche {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+body.modo-noche header {
+  background-color: #2c2f4a;
+}
+
+body.modo-noche .miembro,
+body.modo-noche .flip-card-front,
+body.modo-noche .flip-card-back {
+  background-color: #2c2f4a;
+  color: #f0f0f0;
+}
+
+body.modo-noche .boton2,
+body.modo-noche #modo-toggle {
+  background-color: #333333;
+  color: #ffffff;
+  border-color: #f0f0f0;
+}
+
+#modo-toggle {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 16px;
+  background-color: #8896CF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 999;
+  font-size: 14px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.contenido-principal {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 60px 40px 120px;
+  text-align: center;
+  box-sizing: border-box;
+
+  /* Tamaño de texto responsive */
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.8;
+}
+
+.equipo {
+  padding-bottom: 100px;
+}
+
+h1, h4, h5, h6 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: clamp(1rem, 1.8vw, 1.5rem);
+  line-height: 1.8;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+}
+
+/*texto responsive que hacemos*/
+.imagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px 120px;
+  box-sizing: border-box;
+}
+
+.imagen1 {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.imagen1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen1 img:hover {
+  transform: scale(1.03);
+}
+
+  
+@media screen and (max-width: 768px) {
+  .boton-logo {
+   margin: 20px;
+  }
+
+  .button-toggle {
+    display: block;
+  }
+}
+
+/*@media para boton noche*/
+@media screen and (max-width: 768px) {
+  #modo-toggle {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #modo-toggle {
+    right: auto;
+    left: 15px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .contenido-principal {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card {
+    width: 80vw;
+    height: 80vw; /* 👈 cuadrado adaptable */
+  }
+}
+
+/* OCULTAR EN ESCRITORIO (pantallas desde 768px en adelante) */
+@media screen and (min-width: 768px) {
+  .ocultar {
+    display: none;
+  }
+}
+
+
+.menu-miembros {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#listaMiembros {
+      display: none;
+  }
+  #listaMiembros li{
+    list-style: none;
+    margin: 5px 0;
+  }
+  #listaMiembros a{
+    color: white;
+    text-decoration: none;
+  }
+/* Clase para mostrar lista */
+  #listaMiembros.open {
+    display: block;
+  }
+  .menu.open .menu-miembros {
+    display: block;
+  }
+
+  
