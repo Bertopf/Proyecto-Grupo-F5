@@ -190,13 +190,20 @@
 }
 
 /* Efecto flip para Miguel */
-.flip-card {
+/*.flip-card {
   background-color: transparent;
   width: 300px;
   height: 400px;
   perspective: 1000px;
   cursor: pointer;
 }
+
+.flip-card {
+  width: 300px;
+  perspective: 1000px;
+  margin-bottom: 40px;
+}
+
 
 .flip-card-inner {
   position: relative;
@@ -214,6 +221,14 @@
   transform-style: preserve-3d;
 }
 
+.flip-inner {
+  position: relative;
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+
 .flip-card.flipped .flip-inner {
   transform: rotateY(180deg);
 }
@@ -222,7 +237,7 @@
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+/*.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -235,7 +250,25 @@
   align-items: center;
 }
 
-.flip-card-back {
+.flip-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+
+
+/*.flip-card-back {
   transform: rotateY(180deg);
   background-color: #8896CF;
   display: flex;
@@ -248,10 +281,25 @@
   z-index: 2;  
 }
 
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #8896CF;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+
 
 /*.flipped {
   transform: rotateY(180deg);
-}*/
+}
 
 .flip-front, .flip-back {
   position: absolute;
@@ -267,6 +315,79 @@
   padding: 20px;
   box-sizing: border-box;
 }
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}*/
+
+.flip-card {
+  width: 300px;
+  height: 300px; /* 👈 Ajustamos altura para cuadrado */
+  perspective: 1000px;
+  margin-bottom: 40px;
+}
+
+.flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease-in-out;
+}
+
+.flip-card:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%; /* 👈 exactamente igual */
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+/* Frente de la tarjeta */
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 👈 llena el espacio cuadrado sin deformarse */
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* Reverso con texto */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background-color: #8896CF;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.flip-card-back h5 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.flip-card-back p {
+  font-size: 1rem;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
 
 /*boton modo noche*/
 .flip-back {
@@ -333,7 +454,7 @@ body {
   padding-bottom: 100px;
 }
 
-h1 {
+h1, h4, h5, h6 {
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.2;
   margin-bottom: 20px;
@@ -344,6 +465,33 @@ p {
   line-height: 1.8;
   max-width: 1000px;
   margin: 0 auto 30px;
+}
+
+/*texto responsive que hacemos*/
+.imagen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px 120px;
+  box-sizing: border-box;
+}
+
+.imagen1 {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.imagen1 img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.imagen1 img:hover {
+  transform: scale(1.03);
 }
 
   
@@ -378,5 +526,12 @@ p {
 @media screen and (min-width: 1600px) {
   .contenido-principal {
     font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flip-card {
+    width: 80vw;
+    height: 80vw; /* 👈 cuadrado adaptable */
   }
 }
